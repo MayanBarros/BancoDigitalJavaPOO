@@ -1,18 +1,14 @@
-public class ContaPoupanca {
-
-    public int agencia;
-    public int numero;
-    public int saldo;
-    
-    public void sacar() {
-        
+public class ContaPoupanca extends Conta{
+    public ContaPoupanca(Cliente cliente) {
+        super(cliente);
     }
 
-    public void depositar() {
-
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("--- Extrato Conta Poupança ---");
+        super.ImprimirInformacoesComuns();
     }
 
-    public void transferir() {
 
-    }
+
 }
